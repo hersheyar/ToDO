@@ -27,4 +27,3 @@ jobs:
           xcodebuild test \
             -project "ToDo Task.xcodeproj" \
             -scheme "ToDo Task" \
-            -destination "platform=iOS Simulator,name=iPhone SE (3rd generation),OS=26.2"
