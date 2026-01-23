@@ -27,3 +27,4 @@ jobs:
           xcodebuild test \
             -project "ToDo Task.xcodeproj" \
             -scheme "ToDo Task" \
+            -destination "platform=iOS Simulator"
