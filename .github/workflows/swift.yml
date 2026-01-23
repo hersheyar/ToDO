@@ -11,16 +11,20 @@ on:
 
 jobs:
   build:
-
     runs-on: macos-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-    
-    - name: Run Unit Tests
-      run:  |
-       xcodebuild test \
-       -project "ToDo Task.xcodeproj" \
-       -scheme "ToDo Task" \
-       -destination "platform=iOS Simulator,name=iPhone SE (3rd generation),OS=26.2"
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Show Schemes and Destinations (debug)
+        run: |
+          xcodebuild -list -project "ToDo Task.xcodeproj" || true
+          xcodebuild -showdestinations -project "ToDo Task.xcodeproj" -scheme "ToDo Task" || true
+
+      - name: Run Unit Tests
+        run: |
+          xcodebuild test \
+            -project "ToDo Task.xcodeproj" \
+            -scheme "ToDo Task" \
+            -destination "platform=iOS Simulator,name=iPhone SE (3rd generation),OS=26.2"
