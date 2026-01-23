@@ -20,6 +20,8 @@ struct ContentView: View {
     @State private var newGroupTitle: String = ""
     @State private var isPresentingRenamePrompt = false
     @State private var renameTitle: String = ""
+    @AppStorage("isPremiumUnlocked") private var isPremiumUnlocked = false
+    @State private var isShowingPaywall = false
 
     var body: some View {
         NavigationSplitView(columnVisibility: $columnVisibility) {
@@ -58,10 +60,26 @@ struct ContentView: View {
                 .onDelete(perform: deleteGroups)
                 
                 Section("Sketch") {
-                    NavigationLink {
-                        DrawingScreen()
-                    } label: {
-                        Label("Sketch", systemImage: "pencil.and.outline")
+                    if isPremiumUnlocked {
+                        NavigationLink {
+                            DrawingScreen()
+                        } label: {
+                            Label("Sketch", systemImage: "pencil.and.outline")
+                        }
+                    } else {
+                        Button {
+                            isShowingPaywall = true
+                        } label: {
+                            HStack {
+                                Label("Sketch", systemImage: "pencil.and.outline")
+                                Spacer()
+                                Text("Premium")
+                                    .font(.caption)
+                                    .padding(.horizontal, 8)
+                                    .padding(.vertical, 4)
+                                    .background(.ultraThinMaterial, in: Capsule())
+                            }
+                        }
                     }
                 }
             }
@@ -133,6 +151,8 @@ struct ContentView: View {
                 columnVisibility = .all
             }
             #endif
+            // Force premium to be locked on launch (testing)
+            isPremiumUnlocked = false
         }
         .onChange(of: taskGroups) { _, newValue in
             Persistence.saveTaskGroups(newValue)
@@ -146,6 +166,27 @@ struct ContentView: View {
             #endif
         }
         .navigationSplitViewStyle(.balanced)
+        .sheet(isPresented: $isShowingPaywall) {
+            PremiumGateView(
+                title: "Premium Required",
+                features: [
+                    "Unlimited Sketch Boards",
+                    "Sync Across Devices",
+                    "Priority Support"
+                ],
+                onUnlock: {
+                    isPremiumUnlocked = true
+                    isShowingPaywall = false
+                },
+                onRestore: {
+                    isPremiumUnlocked = true
+                    isShowingPaywall = false
+                },
+                onClose: {
+                    isShowingPaywall = false
+                }
+            )
+        }
         .alert("New Group", isPresented: $isPresentingNewGroupPrompt) {
             TextField("Group name", text: $newGroupTitle)
             Button("Create") {
@@ -279,4 +320,50 @@ struct ContentView: View {
         }
     }
     
+}
+
+private struct PremiumGateView: View {
+    let title: String
+    let features: [String]
+    let onUnlock: () -> Void
+    let onRestore: () -> Void
+    let onClose: () -> Void
+
+    var body: some View {
+        ScrollView {
+            VStack(spacing: 16) {
+                Image(systemName: "star.circle.fill")
+                    .font(.system(size: 56))
+                    .foregroundStyle(.yellow)
+
+                Text(title)
+                    .font(.title2).bold()
+
+                VStack(alignment: .leading, spacing: 8) {
+                    ForEach(features, id: \.self) { feature in
+                        Label(feature, systemImage: "checkmark.seal.fill")
+                    }
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+                Button(action: onUnlock) {
+                    Text("Unlock Premium")
+                        .font(.headline)
+                        .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(.borderedProminent)
+
+                Button(action: onRestore) {
+                    Text("Restore Purchases")
+                        .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(.bordered)
+
+                Button("Not now", role: .cancel, action: onClose)
+                    .padding(.top, 8)
+            }
+            .padding()
+        }
+        .presentationDetents([.large])
+    }
 }

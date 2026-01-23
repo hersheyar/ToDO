@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Localizable.xcstrings" source-language="en" target-language="gu" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0.1" build-num="17A400"/>
+    </header>
+    <body>
+      <trans-unit id="Cancel" xml:space="preserve">
+        <source>Cancel</source>
+        <target>રદ કરો</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Clear" xml:space="preserve">
+        <source>Clear</source>
+        <target>સાફ કરો</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Color" xml:space="preserve">
+        <source>Color</source>
+        <target>રંગ</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Create" xml:space="preserve">
+        <source>Create</source>
+        <target>બનાવો</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Dark" xml:space="preserve">
+        <source>Dark</source>
+        <target>ડાર્ક</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Eraser" xml:space="preserve">
+        <source>Eraser</source>
+        <target>ઇરેસર</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Group name" xml:space="preserve">
+        <source>Group name</source>
+        <target>જૂથનું નામ</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Light" xml:space="preserve">
+        <source>Light</source>
+        <target>લાઇટ</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="New Group" xml:space="preserve">
+        <source>New Group</source>
+        <target>નવું જૂથ</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Pen" xml:space="preserve">
+        <source>Pen</source>
+        <target>પેન</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Redo" xml:space="preserve">
+        <source>Redo</source>
+        <target>ફરી કરો</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Rename" xml:space="preserve">
+        <source>Rename</source>
+        <target>નામ બદલો</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Rename Group" xml:space="preserve">
+        <source>Rename Group</source>
+        <target>જૂથનું નામ બદલો</target>
+        <note from="auto-generated">The title of an alert that appears when a user wants to rename a task group.</note>
+      </trans-unit>
+      <trans-unit id="Save" xml:space="preserve">
+        <source>Save</source>
+        <target>સેવ કરો</target>
+        <note from="auto-generated">The text on a button that saves changes.</note>
+      </trans-unit>
+      <trans-unit id="Sketch" xml:space="preserve">
+        <source>Sketch</source>
+        <target>સ્કેચ</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="System Appearance" xml:space="preserve">
+        <source>System Appearance</source>
+        <target>સિસ્ટમ દેખાવ</target>
+        <note from="auto-generated">A menu item that allows the user to switch between light and dark system appearances.</note>
+      </trans-unit>
+      <trans-unit id="Undo" xml:space="preserve">
+        <source>Undo</source>
+        <target>પાછું કરો</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="add_group" xml:space="preserve">
+        <source>add_group</source>
+        <target>જૂથ ઉમેરો</target>
+        <note from="auto-generated">A button label for adding a new task group.</note>
+      </trans-unit>
+      <trans-unit id="add_task" xml:space="preserve">
+        <source>add_task</source>
+        <target>કાર્ય ઉમેરો</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="app_title" xml:space="preserve">
+        <source>app_title</source>
+        <target>ટુ-ડુ કાર્ય</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="appearance_menu" xml:space="preserve">
+        <source>appearance_menu</source>
+        <target>દેખાવ મેનૂ</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="mark_complete" xml:space="preserve">
+        <source>mark_complete</source>
+        <target>પૂર્ણ તરીકે નિશાન કરો</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="mark_incomplete" xml:space="preserve">
+        <source>mark_incomplete</source>
+        <target>અપૂર્ણ તરીકે નિશાન કરો</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="no_groups_yet" xml:space="preserve">
+        <source>no_groups_yet</source>
+        <target>હજુ સુધી કોઈ જૂથ નથી</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="select_group_message" xml:space="preserve">
+        <source>select_group_message</source>
+        <target>કૃપા કરીને એક જૂથ પસંદ કરો</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="select_group_title" xml:space="preserve">
+        <source>select_group_title</source>
+        <target>જૂથ પસંદ કરો</target>
+        <note from="auto-generated">The title of an alert that appears when a user tries to access the details of a task group but hasn't selected one.</note>
+      </trans-unit>
+      <trans-unit id="task_title_placeholder" xml:space="preserve">
+        <source>task_title_placeholder</source>
+        <target>કાર્યનું શીર્ષક</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="toggle_sidebar" xml:space="preserve">
+        <source>toggle_sidebar</source>
+        <target>સાઇડબાર બદલો</target>
+        <note from="auto-generated">A label for a button that toggles the visibility of the sidebar.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="ToDo Task-InfoPlist.xcstrings" source-language="en" target-language="gu" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0.1" build-num="17A400"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>ToDo Task</source>
+        <target>ટુ-ડુ કાર્ય</target>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

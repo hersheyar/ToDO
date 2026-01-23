@@ -13,23 +13,45 @@ struct TaskGroupDetailView: View {
 
     var body: some View {
         List {
-            ForEach($groups.tasks) { $task in
-                HStack(spacing: 12) {
-                    Image(systemName: task.isComplete ? "checkmark.circle.fill" : "circle")
-                        .foregroundStyle(task.isComplete ? .cyan : .gray)
-                        .onTapGesture {
-                            withAnimation { task.isComplete.toggle() }
+            if groups.tasks.isEmpty {
+                VStack(spacing: 12) {
+                    Image(systemName: "checklist")
+                        .font(.system(size: 28))
+                        .foregroundStyle(.secondary)
+                    Text("No tasks yet")
+                        .font(.headline)
+                    Button(action: addTask) {
+                        Label {
+                            Text("Add your first task")
+                        } icon: {
+                            Image(systemName: "plus")
                         }
-                        .accessibilityLabel(Text(task.isComplete ? "mark_incomplete" : "mark_complete"))
-
-                    TextField("task_title_placeholder", text: $task.title)
-                        .textFieldStyle(.roundedBorder)
-                        .strikethrough(task.isComplete)
+                    }
+                    .buttonStyle(.borderedProminent)
                 }
-                .padding(.vertical, hSizeClass == .compact ? 4 : 8)
-            }
-            .onDelete { index in
-                groups.tasks.remove(atOffsets: index)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 24)
+                .listRowInsets(EdgeInsets())
+            } else {
+                ForEach($groups.tasks) { $task in
+                    HStack(spacing: 12) {
+                        Image(systemName: task.isComplete ? "checkmark.circle.fill" : "circle")
+                            .foregroundStyle(task.isComplete ? .cyan : .gray)
+                            .onTapGesture {
+                                withAnimation { task.isComplete.toggle() }
+                            }
+                            .accessibilityLabel(Text(task.isComplete ? "mark_incomplete" : "mark_complete"))
+
+                        TextField("task_title_placeholder", text: $task.title)
+                            .textFieldStyle(.roundedBorder)
+                            .strikethrough(task.isComplete)
+                            .multilineTextAlignment(.leading)
+                    }
+                    .padding(.vertical, hSizeClass == .compact ? 4 : 8)
+                }
+                .onDelete { index in
+                    groups.tasks.remove(atOffsets: index)
+                }
             }
         }
         .environment(\.editMode, .constant(.active))
@@ -48,7 +70,7 @@ struct TaskGroupDetailView: View {
     }
 
     private func addTask() {
-        withAnimation { groups.tasks.append(TaskItem(title: "")) }
+        withAnimation { groups.tasks.append(TaskItem(title: "New Task")) }
     }
 }
 

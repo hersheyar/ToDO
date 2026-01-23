@@ -4,4 +4,7 @@
    <FileRef
       location = "self:">
    </FileRef>
+   <FileRef
+      location = "group:ToDo_TaskTests.swift">
+   </FileRef>
 </Workspace>

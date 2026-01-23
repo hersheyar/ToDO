@@ -1,0 +1,90 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "add_group" : {
+
+    },
+    "add_task" : {
+
+    },
+    "app_title" : {
+
+    },
+    "appearance_menu" : {
+
+    },
+    "Cancel" : {
+
+    },
+    "Clear" : {
+
+    },
+    "Color" : {
+
+    },
+    "Create" : {
+
+    },
+    "Dark" : {
+
+    },
+    "Eraser" : {
+
+    },
+    "Group name" : {
+
+    },
+    "Light" : {
+
+    },
+    "mark_complete" : {
+
+    },
+    "mark_incomplete" : {
+
+    },
+    "New Group" : {
+
+    },
+    "no_groups_yet" : {
+
+    },
+    "Pen" : {
+
+    },
+    "Redo" : {
+
+    },
+    "Rename" : {
+
+    },
+    "Rename Group" : {
+
+    },
+    "Save" : {
+
+    },
+    "select_group_message" : {
+
+    },
+    "select_group_title" : {
+
+    },
+    "Sketch" : {
+
+    },
+    "System Appearance" : {
+
+    },
+    "task_title_placeholder" : {
+
+    },
+    "toggle_sidebar" : {
+
+    },
+    "Undo" : {
+
+    }
+  },
+  "version" : "1.1"
+}

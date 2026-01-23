@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Localizable.xcstrings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0.1" build-num="17A400"/>
+    </header>
+    <body>
+      <trans-unit id="Cancel" xml:space="preserve">
+        <source>Cancel</source>
+        <target state="new">Cancel</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Clear" xml:space="preserve">
+        <source>Clear</source>
+        <target state="new">Clear</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Color" xml:space="preserve">
+        <source>Color</source>
+        <target state="new">Color</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Create" xml:space="preserve">
+        <source>Create</source>
+        <target state="new">Create</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Dark" xml:space="preserve">
+        <source>Dark</source>
+        <target state="new">Dark</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Eraser" xml:space="preserve">
+        <source>Eraser</source>
+        <target state="new">Eraser</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Group name" xml:space="preserve">
+        <source>Group name</source>
+        <target state="new">Group name</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Light" xml:space="preserve">
+        <source>Light</source>
+        <target state="new">Light</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="New Group" xml:space="preserve">
+        <source>New Group</source>
+        <target state="new">New Group</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Pen" xml:space="preserve">
+        <source>Pen</source>
+        <target state="new">Pen</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Redo" xml:space="preserve">
+        <source>Redo</source>
+        <target state="new">Redo</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Rename" xml:space="preserve">
+        <source>Rename</source>
+        <target state="new">Rename</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Rename Group" xml:space="preserve">
+        <source>Rename Group</source>
+        <target state="new">Rename Group</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Save" xml:space="preserve">
+        <source>Save</source>
+        <target state="new">Save</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Sketch" xml:space="preserve">
+        <source>Sketch</source>
+        <target state="new">Sketch</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="System Appearance" xml:space="preserve">
+        <source>System Appearance</source>
+        <target state="new">System Appearance</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Undo" xml:space="preserve">
+        <source>Undo</source>
+        <target state="new">Undo</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="add_group" xml:space="preserve">
+        <source>add_group</source>
+        <target state="new">add_group</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="add_task" xml:space="preserve">
+        <source>add_task</source>
+        <target state="new">add_task</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="app_title" xml:space="preserve">
+        <source>app_title</source>
+        <target state="new">app_title</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="appearance_menu" xml:space="preserve">
+        <source>appearance_menu</source>
+        <target state="new">appearance_menu</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="mark_complete" xml:space="preserve">
+        <source>mark_complete</source>
+        <target state="new">mark_complete</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="mark_incomplete" xml:space="preserve">
+        <source>mark_incomplete</source>
+        <target state="new">mark_incomplete</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="no_groups_yet" xml:space="preserve">
+        <source>no_groups_yet</source>
+        <target state="new">no_groups_yet</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="select_group_message" xml:space="preserve">
+        <source>select_group_message</source>
+        <target state="new">select_group_message</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="select_group_title" xml:space="preserve">
+        <source>select_group_title</source>
+        <target state="new">select_group_title</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="task_title_placeholder" xml:space="preserve">
+        <source>task_title_placeholder</source>
+        <target state="new">task_title_placeholder</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="toggle_sidebar" xml:space="preserve">
+        <source>toggle_sidebar</source>
+        <target state="new">toggle_sidebar</target>
+        <note/>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="ToDo Task-InfoPlist.xcstrings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="26.0.1" build-num="17A400"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>ToDo Task</source>
+        <target state="new">ToDo Task</target>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
