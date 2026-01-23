@@ -20,7 +20,7 @@ jobs:
     
     - name: Run Unit Tests
       run:  |
-       xcodebuild test\
+       xcodebuild test \
        -project "ToDo Task.xcodeproj" \
        -scheme "ToDo Task" \
-       -destination 'platform=IOS Simulator,name=iPhone SE (3rd generation)' \ test
+       -destination 'platform=IOS Simulator,name=iPhone SE (3rd generation)'
