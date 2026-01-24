@@ -27,6 +27,4 @@ jobs:
           xcodebuild test \
             -project "ToDo Task.xcodeproj" \
             -scheme "ToDo Task" \
-            -destination "platform=iOS Simulator,name=iPhone SE (3rd generation)" 
-            -sdk iphonesimulator \
-             IPHONEOS_DEPLOYMENT_TARGET=18.5
+            -destination 'platform=iOS Simulator,name=iPhone SE (3rd generation),OS=18.5'
